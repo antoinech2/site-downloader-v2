@@ -56,7 +56,7 @@ def __main__():
             try:
                 br.retrieve(link.absolute_url, f"{path}/{name}.pdf")
             except:
-                print(f"Erreur 404 : Fichier introuvable : {name}.pdf")
+                print(f"Erreur 404 : Fichier introuvable : {link.absolute_url}")
             traite += 1
             send_progress(name)
 
